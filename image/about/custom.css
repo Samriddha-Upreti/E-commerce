@@ -1,0 +1,44 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.hero_image {
+	background: url(coverimage.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+
+.product {
+	width: 90%;
+	margin-top: .1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product__list__item {
+	float: left;
+	width: 32%;
+	margin-left: .7rem;
+}
+
+
+.product__list__item:first-of-type {
+	margin-left: 0;
+}
+
+
+@media screen and (max-width: 700px) {
+	.product__list__item { 
+		width: 100%;
+		float: none;
+	}
+}

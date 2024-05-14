@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e5e5eb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.category-box:hover {
+    transform: scale(1.05s);
+}
+
+.logo img {
+    max-width: 110px;
+    height: auto;
+    border-radius: 20px;
+    padding-left: 10px;
+
+
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+
+}
+
+.navmenu a {
+    color: #1a1a1a;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin-right: 30px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    transform: scale(1.1);
+    color: rgb(60, 123, 123);
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    padding-right: -10px;
+}
+
+.nav-icon i {
+    margin-right: 20px;
+    color: #1a1a1a;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: rgb(60, 123, 123);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    font-size: 14px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: #1a1a1a;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+#menu-icon:hover {
+    transform: scale(1.1);
+    color: rgb(60, 123, 123);
+}
+
+
+
+
+/* cart */
+#cart-container {
+    overflow-x: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#cart-container table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+
+}
+
+#cart-container table thead {
+    font-weight: 500;
+    background: black;
+}
+
+#cart-container table thead td {
+    background: #e5e5eb;
+    color: black;
+    border: none;
+    padding: 6px 0;
+}
+
+#cart-container table td {
+    border: 1px solid #b6b3b3;
+    text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+    width: 100px;
+}
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+    width: 200px;
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+    width: 170px;
+}
+
+#cart-container table tbody img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+#cart-container table tbody i {
+    color: #8d8c89;
+}
+
+#cart-bottom .total div>div {
+    padding: 40px 12px;
+}
+
+#cart-bottom .total h6 {
+    color: #2a2a2a;
+}
+
+.Second-hr {
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+
+#cart-bottom .total div>button {
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.order{
+    background-color: #e5e5eb;
+    border: none;
+    border-radius: 13px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 1350px;
+}
+.footer {
+    position: sticky;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(219, 218, 218);
+    padding: 32px;
+   justify-content: center;
+   margin-top: auto;
+}
+
+
+.footer .Ftext {
+    margin-inline: 72px;
+}
+
+.Ftext p {
+    margin-top: 22px;
+}
+
+
+/* .khutta {
+    justify-self: flex-end;
+    
+    align-self: flex-end;
+    
+    align-items: flex-end;
+    
+    align-content: flex-end;
+    
+    margin-left: 85%;
+} */
